@@ -2,9 +2,7 @@ function Visualiser() {
   var context, src, analyser, dataArray = [], barChart, circle;
 
   context = new AudioContext();
-  console.log(context);
   src = context.createMediaElementSource(audio);
-  console.log(context);
   analyser = context.createAnalyser();
 
   src.connect(analyser);
